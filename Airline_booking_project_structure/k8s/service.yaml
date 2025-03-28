@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airline-backend-deployment
+  labels:
+    app: airline-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: airline-backend
+  template:
+    metadata:
+      labels:
+        app: airline-backend
+    spec:
+      containers:
+        - name: airline-backend
+          image: your-dockerhub-username/airline-backend:latest # Replace
+          ports:
+            - containerPort: 8080
