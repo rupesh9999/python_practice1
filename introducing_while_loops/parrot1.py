@@ -4,11 +4,11 @@ message = ""
 
 active = True
 while active:
-    message = input(prompt)
+    meassage = input(prompt)
 
     if message == 'quit':
 #        active = False
       break
     else:
-        print(message)
+        print(f"I'd love to go to {prompt.title}")
 # The above code will repeat the user's input until they enter 'quit'
