@@ -1,0 +1,21 @@
+def favorite_book(title):
+    """Display a message about someone's favorite book."""
+    print(f"One of my favorite books is {title.title()}.")
+
+favorite_book('Alice in Wonderland')
+favorite_book('The Great Gatsby')
+favorite_book('To Kill a Mockingbird')
+favorite_book('1984')   
+favorite_book('The Catcher in the Rye')
+favorite_book('Pride and Prejudice')
+favorite_book('The Lord of the Rings')
+favorite_book('Harry Potter')
+favorite_book('The Hobbit')
+favorite_book('The Alchemist')
+favorite_book('The Great Gatsby')
+favorite_book('The Picture of Dorian Gray')
+favorite_book('The Book Thief') 
+favorite_book('The Da Vinci Code')
+favorite_book('The Hunger Games')
+favorite_book('The Fault in Our Stars')
+favorite_book('The Kite Runner')
