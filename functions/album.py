@@ -1,17 +1,29 @@
-def make_album(artist_name, album_title, number_of_songs_on_album=None):
-    """Return a dictionary of information about an album."""
-    album = {
-        'artist': artist_name,
-        'album': album_title,
-    }
-    if number_of_songs_on_album:
-        album['number_of_songs'] = number_of_songs_on_album
+def make_album(artist, title, songs=None):
+    """Create a dictionary describing a music album."""
+    album = {"artist": artist, "title": title}
+    if songs:
+        album["songs"] = songs
     return album
 
-# Example usage:
-album_1 = make_album('Taylor Swift', '1989')
-album_2 = make_album('Ed Sheeran', 'Divide', 12)
-album_3 = make_album('Adele', '25', 11)
-print(album_1)
-print(album_2)
-print(album_3)
+# Interactive loop to build albums
+while True:
+    print("\nEnter album details (or 'q' to quit):")
+    artist = input("Artist name: ")
+    if artist.lower() == 'q':
+        break
+    title = input("Album title: ")
+    if title.lower() == 'q':
+        break
+    songs = input("Number of songs (optional, press Enter to skip): ")
+    if songs.lower() == 'q':
+        break
+    
+    # Convert songs to integer if provided, otherwise leave as None
+    if songs:
+        album = make_album(artist, title, int(songs))
+    else:
+        album = make_album(artist, title)
+    
+    print("Album created:", album)
+
+print("Goodbye!")
