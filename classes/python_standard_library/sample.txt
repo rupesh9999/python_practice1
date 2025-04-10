@@ -1,0 +1,3 @@
+The quick brown fox jumps over the lazy dog.
+The fox is quick and brown, while the dog is lazy.
+Quick jumps are the fox's speciality.
