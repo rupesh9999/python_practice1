@@ -1,0 +1,3 @@
+C uses pointers to manage memory
+I learned C syntax for loops
+C is fast and poweful
