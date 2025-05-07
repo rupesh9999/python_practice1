@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 
-x_values = [1, 2, 3, 4, 5]
-y_values = [1, 4, 9, 16, 25]
+x_values = range(1, 1001)
+y_values = [x**2 for x in x_values]
 
 plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
 # Plot the squares
-ax.scatter(x_values, y_values, s=100)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # Set chart title and label axes
 ax.set_title("Square Numbers", fontsize=24)
