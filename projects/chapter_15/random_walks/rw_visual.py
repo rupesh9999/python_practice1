@@ -6,7 +6,7 @@ from random_walk import Randomwalk
 
 while True:
     # Make a random walk.
-    rw = Randomwalk()
+    rw = Randomwalk(50_000)
     rw.fill_walk()
 
     # Plot the points in the walk.
