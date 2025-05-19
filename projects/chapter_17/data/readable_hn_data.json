@@ -1,0 +1,11 @@
+{
+    "by": "jackolas",
+    "id": 1915826,
+    "kids": [
+        1917442
+    ],
+    "parent": 1915558,
+    "text": "Well theres statusnet: <a href=\"http://status.net/\" rel=\"nofollow\">http://status.net/</a> . Which I assume would be trivial to sync using pubsubhubbub or wave-style xmpp extensions.<p>Edit: wiki says they already support this: \"Supports Federation, which provides the ability to subscribe to notices by users on a remote service through the OpenMicroBlogging protocol.\"",
+    "time": 1290029273,
+    "type": "comment"
+}
